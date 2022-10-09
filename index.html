@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSE 110: Lab 2</title>
+    <link rel="icon" type="image/x-icon" href="Media/favicon.ico">
+</head>
+
+<body>
+    <header>
+
+        <h1>Chilton Technology Application High School Project</h1>
+        <h2>10/5/200 : Individual App Idea Presentations</h2>
+
+        <div>
+            <h3>Agenda</h3>
+            <nav>
+                <ol>
+                    <li><a href="#attendance">Attendence</a></li>
+                    <li><a href="#recap">Previous Meeting Recap</a></li>
+                    <li><a href="#presentations">Individual App Idea Presentations</a></li>
+                    <li><a href="#vote">App Idea Voting Form</a></li>
+                    <li><a href="#notes">General Notes/Comments/Questions</a></li>
+                    <li><a href="#wrap">Meeting Wrap Up</a></li>
+                </ol>
+            </nav>
+        </div>
+
+    </header>
+
+    <hr>
+
+    <main>
+        <section>
+            <h3 id="attendance">Attendance</h3>
+            <div>
+                <h4>Present</h4>
+                <ul>
+                    <li>Rory Gilmore</li>
+                    <li>Paris Geller</li>
+                    <li>Louise Grant</li>
+                    <li>Tristan Dugrary</li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4>Absent</h4>
+                <ul>
+                    <li>Brad Langford (Currently on Broadway)</li>
+                    <li>Madeline Lynn (Sick)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h3 id="recap">Previous Meeting Recap</h3>
+            <p>At our last meeting we <span>reviwed the project requirements</span> and <span>assigned everyone to come up with an app idea to pitch<br></span>
+                <details><summary>specific project requirements</summary> "detailed project requirements"</details>
+            </p>
+        </section>
+
+        <section>
+            <h3 id="presentations">Individual App Idea Presentations</h3>
+            <p>
+                <strong>Rory - Reading App</strong> An app where you can read your favorite books.<br>
+                <img
+                    src="https://img.buzzfeed.com/buzzfeed-static/static/2014-03/enhanced/webdr04/20/22/enhanced-20366-1395369612-7.jpg?output-quality=auto&output-format=auto&downsize=640:*"
+                    alt="Rory Reading"
+                /> <br>
+                <strong>Paris - Craft App</strong> An app where you can do virtual crafts.<br>
+                <img
+                    src="https://i.pinimg.com/736x/24/56/1f/24561f1fca7f0f7b2c346a5fd954f834--paris-crafts-craft-corner.jpg" alt="Paris Craft Corner"
+                /><br>
+                <strong>Louise - Chilton Dating App</strong> A dating app exclusively for Chilton<br>
+                <img
+                    src="https://cdn-icons-png.flaticon.com/512/2150/2150418.png"
+                    alt="Dating App Icon"
+                /><br>
+                <strong>Tristian - No presentation</strong> <em>what</em> a shocker</p>
+        </section>
+
+        <section>
+            <h3 id="vote">App Idea Voting Form</h3>
+            <form action>
+
+                <input type="text" placeholder="Enter Your Name"><br>
+                <input type="date"><br>
+
+                <fieldset>
+                    <legend>Cast your first vote:</legend>
+                      <div>
+                        <input type="radio" id="Rory" name="app" value="reading">
+                        <label for="Rory">Reading App</label>
+                  
+                        <input type="radio" id="Paris" name="app" value="craft">
+                        <label for="Paris">Craft App</label>
+                  
+                        <input type="radio" id="Louise" name="app" value="dating">
+                        <label for="Louise">Dating App</label>
+                      </div>
+                </fieldset>
+
+                <label for="app-choice">Cast your second vote:</label>
+                <input list="app-choices" id="app-choice" name="app-choice">
+                <datalist id="app-choices">
+                    <option value="Reading App">
+                    <option value="Crafting App">
+                    <option value="Dating App">
+                </datalist><br>
+
+                <label for="app-select">Cast your third vote:</label>
+                <select name="apps" id="app-select">
+                    <option value="">--Please choose an option--</option>
+                    <option value="read">Reading App</option>
+                    <option value="craft">Crafting App</option>
+                    <option value="date">Dating App</option>
+                </select><br>
+
+                <textarea>Please explain why you chose your selections</textarea><br>
+
+                <label for="agreement">I promise that Paris did not blackmail me into choosing her idea</label>
+                <input type="checkbox" id="agreement"><br>
+                
+                <button>Submit</button>
+
+            </form>
+        </section>
+
+        <section>
+            <h3 id="notes">General Notes/Comments/Questions</h3>
+            <p> Dating app was ideated by both Madeline and Louise</p>
+        </section>
+
+        <section>
+            <h3 id="wrap">Meeting Wrap Up</h3>
+
+            <figure>
+                <figcaption>Listen to the meeting here:</figcaption>
+                <audio
+                    controls
+                    src="Media/Gilmore-Girls-Theme-Song.mp3">
+                </audio>
+            </figure>
+            
+            <figure>
+                <figcaption>Watch meeting here:</figcaption>
+                <video controls>
+                    <source src="Media/RPReplay_Final1665297799.mp4" type="video/mp4">
+                </video>
+            </figure>
+
+
+        </section>
+
+    </main>
+
+    <hr>
+
+    <footer><b>Go watch <i>Gilmore Girls</i>!!</b></footer>
+
+</body>
+
+</html>
