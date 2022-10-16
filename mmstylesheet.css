@@ -1,0 +1,143 @@
+/* third party font */
+@font-face {
+    font-family: "myFont";
+    src: url("/Users/shantelleserafin/Projects/fa22-cse110-lab3/fonts/Domine-Regular.woff");
+}
+
+/* class selector */
+.imagesize{
+    width: 200px; /* 1) absolute unit*/
+    height: 4cm; /* 2) absolute unit*/
+    margin: 20px;
+}
+
+.flex-container{ /* flexbox*/
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+}
+.grid-container{ /* grid*/
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+
+.grid-item{
+    padding: 20px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+/* id selector */
+#videosize {
+    width: 50vw; /* 1) relative unit*/
+    height: 30vh; /* 2) relative unit*/
+    max-width: 50vw; /*sizing*/
+    max-height: 30vh;
+    position: static;
+}
+
+#shift{
+    position: relative;
+    left: 30px;
+}
+
+#display {
+    background-color:none;
+}
+
+/* universal selector */
+* {
+    font-family: "myFont", serif;
+}
+
+/* element selector */
+textarea{
+    border-style: solid; /*boarder*/
+    border-color: black;  /*color name - color name */
+    border-width: thin;
+    border-radius: 4px;
+    padding: 1em;  /*short padding*/ /* 3) relative unit*/
+    margin: 11pt; /*short margin*/ /* 3) absolute unit*/
+}
+  
+body{
+    background-color: rgb(232, 255, 245); /*color name - rgb */ /*background color*/
+}
+
+/* attribute selector */
+input[type = text]{
+    border-style: solid;
+    border-color: #000000; /*color name - hexcode */
+    border-width: thin;
+    border-radius: 4px;
+    padding-top: 15px; /*long padding*/
+    padding-right: 0px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    margin: auto; /*auto margin*/
+}
+
+input[type = date]{
+    border-style: solid;
+    border-color: black;
+    border-width: thin;
+    border-radius: 4px;
+    padding: 15px;
+    margin-top: 5px; /*long margin*/
+    margin-bottom: 5px; 
+    margin-left: 0px;
+    margin-right: 0px; 
+}
+
+/* pseudo-class selector */
+button:hover {
+    background-color: lightblue;
+}
+
+button:active {
+    box-shadow: 2px 2px 5px darkblue;
+}
+
+/* selector list */
+h1,
+h2{
+    color: hsl(0, 0%, 0%); /*color name - hsl*/ /*styling text*/
+    text-decoration:none;
+    text-align: center;
+    display: block;
+}
+
+/* Descendant Combinator (element element) */
+#display span {
+    background:lightyellow;
+    display: inline;
+}
+
+/*Child Combinator (element > element)*/
+.flex-container > div {
+    margin: 10px;
+    padding: 20px;
+}
+
+/*General sibling combinator (element ~ element)*/
+h1 ~ h2{
+    color: gray;
+}
+
+/*Adjacent sibling combinator (element + element)*/
+li:first-of-type + li {
+    color: brown;
+}
+
+/*Combining Two Selectors (element.class)*/
+p.colorbrown{
+    color: brown;
+}
+
+/*media query*/
+@media only screen and (max-width: 800px) {
+    body {
+      background-color: pink;
+    }
+}
