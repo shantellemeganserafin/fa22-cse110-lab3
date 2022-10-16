@@ -6,21 +6,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSE 110: Lab 2</title>
+    <title>CSE 110: Lab 3</title>
     <link rel="icon" type="image/x-icon" href="Media/favicon.ico">
+    <link rel="stylesheet" href="mmstylesheet.css">
+    <!--Internal CSS-->
+    <style>
+        h3{
+            color: black;
+        }
+    </style>
+    
 </head>
 
 <body>
     <header>
 
-        <h1>Chilton Technology Application High School Project</h1>
-        <h2>10/5/200 : Individual App Idea Presentations</h2>
+        <h1 style="color:black">Chilton Technology Application High School Project</h1> <!--Inline CSS-->
+        <h2>10/5/2000 : Individual App Idea Presentations</h2>
 
-        <div>
+        <section>
             <h3>Agenda</h3>
-            <nav>
+            <nav id="shift">
                 <ol>
-                    <li><a href="#attendance">Attendence</a></li>
+                    <li><a href="#attendance">Attendance</a></li>
                     <li><a href="#recap">Previous Meeting Recap</a></li>
                     <li><a href="#presentations">Individual App Idea Presentations</a></li>
                     <li><a href="#vote">App Idea Voting Form</a></li>
@@ -28,7 +36,7 @@
                     <li><a href="#wrap">Meeting Wrap Up</a></li>
                 </ol>
             </nav>
-        </div>
+        </section>
 
     </header>
 
@@ -37,8 +45,8 @@
     <main>
         <section>
             <h3 id="attendance">Attendance</h3>
-            <div>
-                <h4>Present</h4>
+            <div id ="shift">
+                <h4 >Present</h4>
                 <ul>
                     <li>Rory Gilmore</li>
                     <li>Paris Geller</li>
@@ -46,8 +54,8 @@
                     <li>Tristan Dugrary</li>
                 </ul>
             </div>
-            
-            <div>
+
+            <div  id ="shift">
                 <h4>Absent</h4>
                 <ul>
                     <li>Brad Langford (Currently on Broadway)</li>
@@ -58,30 +66,34 @@
 
         <section>
             <h3 id="recap">Previous Meeting Recap</h3>
-            <p>At our last meeting we <span>reviwed the project requirements</span> and <span>assigned everyone to come up with an app idea to pitch<br></span>
-                <details><summary>specific project requirements</summary> "detailed project requirements"</details>
-            </p>
+            <div id="display">
+                <p id="shift">At our last meeting we <span>reviwed the project requirements</span> and <span>assigned everyone to come up with an app idea to pitch<br></span>
+                </p>
+            </div>
+
+            <details id="shift"><summary>specific project requirements</summary> "detailed project requirements"</details>
         </section>
 
         <section>
             <h3 id="presentations">Individual App Idea Presentations</h3>
-            <p>
-                <strong>Rory - Reading App</strong> An app where you can read your favorite books.<br>
-                <img
-                    src="https://img.buzzfeed.com/buzzfeed-static/static/2014-03/enhanced/webdr04/20/22/enhanced-20366-1395369612-7.jpg?output-quality=auto&output-format=auto&downsize=640:*"
-                    alt="Rory Reading"
-                /> <br>
-                <strong>Paris - Craft App</strong> An app where you can do virtual crafts.<br>
-                <img
-                    src="https://i.pinimg.com/736x/24/56/1f/24561f1fca7f0f7b2c346a5fd954f834--paris-crafts-craft-corner.jpg" alt="Paris Craft Corner"
-                /><br>
-                <strong>Louise - Chilton Dating App</strong> A dating app exclusively for Chilton<br>
-                <img
-                    src="https://cdn-icons-png.flaticon.com/512/2150/2150418.png"
-                    alt="Dating App Icon"
-                /><br>
-                <strong>Tristian - No presentation</strong> <em>what</em> a shocker</p>
+
+            <div class="grid-container">
+                <div class="grid-item"><strong>Rory - Reading App</strong></div>
+                <div class="grid-item">Read your favorite books</div>
+                <div class="grid-item"><strong>Paris - Craft App</strong></div>
+                <div class="grid-item">Do virtual crafts</div>
+                <div class="grid-item"><strong>Louise - Chilton Dating App</strong></div>
+                <div class="grid-item">Dating app for Chilton</div>
+                <div class="grid-item"><strong>Tristian - No presentation</strong></div>
+                <div class="grid-item"><em>what</em> a shocker</div>
+            </div>
         </section>
+
+        <div class="flex-container">
+            <div><img class=imagesize src="https://img.buzzfeed.com/buzzfeed-static/static/2014-03/enhanced/webdr04/20/22/enhanced-20366-1395369612-7.jpg?output-quality=auto&output-format=auto&downsize=640:*"/></div>
+            <div><img class=imagesize src="https://i.pinimg.com/736x/24/56/1f/24561f1fca7f0f7b2c346a5fd954f834--paris-crafts-craft-corner.jpg"/></div>
+            <div><img class=imagesize src="https://cdn-icons-png.flaticon.com/512/2150/2150418.png"/></div>
+        </div>
 
         <section>
             <h3 id="vote">App Idea Voting Form</h3>
@@ -132,7 +144,7 @@
 
         <section>
             <h3 id="notes">General Notes/Comments/Questions</h3>
-            <p> Dating app was ideated by both Madeline and Louise</p>
+            <p id="shift" class="colorbrown"> Dating app was ideated by both Madeline and Louise</p>
         </section>
 
         <section>
@@ -148,7 +160,7 @@
             
             <figure>
                 <figcaption>Watch meeting here:</figcaption>
-                <video controls>
+                <video controls id="videosize">
                     <source src="Media/RPReplay_Final1665297799.mp4" type="video/mp4">
                 </video>
             </figure>
